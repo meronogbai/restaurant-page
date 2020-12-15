@@ -11,29 +11,24 @@ const tabs = [homeTab, contactTab, menuTab];
 
 home(content);
 
-homeTab.addEventListener('click', () => {
-  content.innerHTML = '';
-  tabs.forEach(tab => {
-    tab.classList.remove('active');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    content.innerHTML = '';
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+    tab.classList.toggle('active');
   });
-  homeTab.classList.toggle('active');
+});
+
+homeTab.addEventListener('click', () => {
   home(content);
 });
 
 contactTab.addEventListener('click', () => {
-  content.innerHTML = '';
-  tabs.forEach(tab => {
-    tab.classList.remove('active');
-  });
-  contactTab.classList.toggle('active');
   contact(content);
 });
 
 menuTab.addEventListener('click', () => {
-  content.innerHTML = '';
-  tabs.forEach(tab => {
-    tab.classList.remove('active');
-  });
-  menuTab.classList.toggle('active');
   menu(content);
 });
