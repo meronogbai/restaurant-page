@@ -27,7 +27,7 @@ This is a simple restaurant page built for study purposes.
 
 ## Live Demo
 
-<button> <a href="http://meronogbai.me/restaurant-page/"> Click here!</a> </button>
+<button> <a href="https://meronokbay.github.io/restaurant-page/"> Click here!</a> </button>
 
 ## Install ⏳
 
